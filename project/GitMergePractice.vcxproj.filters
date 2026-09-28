@@ -19,6 +19,18 @@
     <Filter Include="externals\imgui">
       <UniqueIdentifier>{1c4bc103-d475-410a-bb5b-7babd2ffa289}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{492d0cc2-cc73-4fdc-ae89-bb010f9ceae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Test">
+      <UniqueIdentifier>{7abb6de2-659b-4beb-bb9c-fb114ef1a14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{e2ca2592-e8ee-4266-b71c-f46419e79428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\Test">
+      <UniqueIdentifier>{d66f516a-f50a-4c62-8b2c-4713acfdf7d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,8 +57,16 @@
     <ClCompile Include="externals\imgui\imgui_widgets.cpp">
       <Filter>externals\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="..\Test\TestFunction.cpp">
+      <Filter>ソースファイル\Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="VertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Test\TestFunction.h">
+      <Filter>ヘッダーファイル\Test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
